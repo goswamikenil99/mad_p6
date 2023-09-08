@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mad_p6"
         tools:targetApi="31">
+        <service
+            android:name=".music_k"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name=".music"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".music_player"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
