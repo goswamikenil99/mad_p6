@@ -10,8 +10,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var pl :FloatingActionButton=findViewById(R.id.play)
+        var stop :FloatingActionButton=findViewById(R.id.stop)
         pl.setOnClickListener(){
-        startService(Intent(this,music_k::class.java));
+        playpause()
+        }
+        stop.setOnClickListener(){
+            stop_m()
         }
     }
+    fun playpause(){
+        Intent(applicationContext,MyService::class.java).putExtra(MyService.PLAYERKEY,MyService.PLAYERVALUE).apply { startService(this) }
+    }
+    fun stop_m(){
+        Intent(applicationContext,MyService::class.java).putExtra(MyService.PLAYERKEY,MyService.PLAYERVALUE).apply { stopService(this) }
+    }
+
 }

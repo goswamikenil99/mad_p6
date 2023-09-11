@@ -64,7 +64,7 @@
             android:layout_margin="10dp"
             android:backgroundTint="@android:color/darker_gray"
             android:contentDescription="@android:string/yes"
-            android:src="@drawable/round_play_arrow_24"
+            android:src="@drawable/baseline_repeat_24"
             app:fabCustomSize="50dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -75,7 +75,7 @@
             android:layout_marginBottom="10dp"
             android:backgroundTint="@android:color/darker_gray"
             android:contentDescription="@android:string/yes"
-            android:src="@drawable/round_play_arrow_24"
+            android:src="@drawable/baseline_skip_previous_24"
             app:fabCustomSize="55dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -90,13 +90,14 @@
             app:fabCustomSize="70dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/stop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
             android:layout_margin="10dp"
             android:backgroundTint="@android:color/darker_gray"
             android:contentDescription="@android:string/yes"
-            android:src="@drawable/round_play_arrow_24"
+            android:src="@drawable/baseline_stop_24"
             app:fabCustomSize="50dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -107,7 +108,7 @@
             android:layout_marginBottom="10dp"
             android:backgroundTint="@android:color/darker_gray"
             android:contentDescription="@android:string/yes"
-            android:src="@drawable/round_play_arrow_24"
+            android:src="@drawable/baseline_skip_next_24"
             app:fabCustomSize="55dp" />
 
 
